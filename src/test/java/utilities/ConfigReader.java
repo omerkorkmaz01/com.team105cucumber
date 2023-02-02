@@ -8,7 +8,7 @@ public class ConfigReader {
     static Properties properties;
 
     static {
-        String dosyaYolu= "configuration.properties";
+        String dosyaYolu="configurations.properties";
         try {
             FileInputStream fis= new FileInputStream(dosyaYolu);
             properties= new Properties();
