@@ -1,4 +1,3 @@
-@wip
 Feature: US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli
 
   Scenario: TC09 Gecerli kullanici adi ve sifre ile pozitif login testi
@@ -9,4 +8,5 @@ Feature: US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli
     And password kutusuna "qdGecerliPassword" yazar
     Then login butonuna basar
     And basarili giris yapildigini test eder
+    And 3 saniye bekler
     Then sayfayi kapatir
