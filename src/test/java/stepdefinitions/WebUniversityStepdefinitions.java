@@ -69,11 +69,9 @@ public class WebUniversityStepdefinitions {
     @Then("ilk sayfaya dondugunu test eder")
     public void ilk_sayfaya_dondugunu_test_eder() {
         // Write code here that turns the phrase above into concrete actions
-
     }
     @Then("acilan tum sayfalari kapatir")
     public void acilan_tum_sayfalari_kapatir() {
         Driver.quitDriver();
     }
-
 }

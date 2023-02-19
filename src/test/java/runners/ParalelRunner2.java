@@ -1,22 +1,22 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        plugin={"html:target/cucumber-reports-smoke.html",
-                "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
-        },
-       features ="src/test/resources/features",
-       glue = "stepdefinitions",
-       tags = "@smoke",
-       dryRun = false
-)
-public class Runner {
+public class ParalelRunner2 {
+    @RunWith(Cucumber.class)
+    @CucumberOptions(
+            plugin={"html:target/cucumber-reports-p2.html",
+                    "json:target/json-reports/cucumberp2.json",
+                    "junit:target/xml-report/cucumberp2.xml"
+            },
+            features ="src/test/resources/features",
+            glue = "stepdefinitions",
+            tags = "@p2",
+            dryRun = false
+    )
+    public class Runner {
     /*
     Cucumber'da Runner class'i bos bir class'tir
     Runner class'ini diger class'lardan farkli kilan
@@ -45,5 +45,5 @@ public class Runner {
      false : secilirse, verilen tag ile isaretlenen
                 Feature veya Scenario'lari calistirir
      */
-
+    }
 }

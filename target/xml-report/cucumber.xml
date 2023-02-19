@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="193.241">
+    <testcase classname="US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli" name="TC09 Gecerli kullanici adi ve sifre ile pozitif login testi" time="38.268">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna "qdGecerliUsername" yazar............................passed
+And password kutusuna "qdGecerliPassword" yazar.............................passed
+Then login butonuna basar...................................................passed
+And basarili giris yapildigini test eder....................................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Kullanici yanlis bilgilerle giris yapamaz" name="TC10 Gecerli kullanici adi ve  gecersiz sifre ile negatif Login Testi" time="28.149">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna "qdGecerliUsername" yazar............................passed
+And password kutusuna "qdGecersizPassword" yazar............................passed
+Then login butonuna basar...................................................passed
+And giris yapilamadigini test eder..........................................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Kullanici yanlis bilgilerle giris yapamaz" name="TC11 Gecersiz kullanici adi ve  gecerli sifre ile negatif Login Testi" time="11.135">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna "qdGecersizUsername" yazar...........................passed
+And password kutusuna "qdGecerliPassword" yazar.............................passed
+Then login butonuna basar...................................................passed
+And giris yapilamadigini test eder..........................................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Kullanici yanlis bilgilerle giris yapamaz" name="TC12 Gecersiz kullanici adi ve  gecersiz sifre ile negatif Login Testi" time="13.68">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna "qdGecersizUsername" yazar...........................passed
+And password kutusuna "qdGecersizPassword" yazar............................passed
+Then login butonuna basar...................................................passed
+And giris yapilamadigini test eder..........................................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1009_ Yanlis kullanici adi ve password listesi ile negatif login testi" name="TC14 yanlis kullanici listesi ile giris yapilmamali" time="11.828">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna manuel olarak "ilker" yazar..........................passed
+And password kutusuna manuel olarak "ilker@a.com" yazar.....................passed
+And 3 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1009_ Yanlis kullanici adi ve password listesi ile negatif login testi" name="TC14 yanlis kullanici listesi ile giris yapilmamali 2" time="48.935">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna manuel olarak "mehmet" yazar.........................passed
+And password kutusuna manuel olarak "mehmet@b.com" yazar....................passed
+And 3 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1009_ Yanlis kullanici adi ve password listesi ile negatif login testi" name="TC14 yanlis kullanici listesi ile giris yapilmamali 3" time="15.808">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna manuel olarak "yasar" yazar..........................passed
+And password kutusuna manuel olarak "yasar@c.com" yazar.....................passed
+And 3 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1009_ Yanlis kullanici adi ve password listesi ile negatif login testi" name="TC14 yanlis kullanici listesi ile giris yapilmamali 4" time="12.512">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna manuel olarak "Adem" yazar...........................passed
+And password kutusuna manuel olarak "adem@d.com" yazar......................passed
+And 3 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1009_ Yanlis kullanici adi ve password listesi ile negatif login testi" name="TC14 yanlis kullanici listesi ile giris yapilmamali 5" time="12.607">
+        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna manuel olarak "ozgur" yazar..........................passed
+And password kutusuna manuel olarak "ozgur@e.com" yazar.....................passed
+And 3 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

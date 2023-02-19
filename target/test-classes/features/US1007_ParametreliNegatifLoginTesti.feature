@@ -1,3 +1,4 @@
+@smoke
 Feature: Kullanici yanlis bilgilerle giris yapamaz
 
   Scenario: TC10 Gecerli kullanici adi ve  gecersiz sifre ile negatif Login Testi
